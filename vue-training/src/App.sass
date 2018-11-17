@@ -1,0 +1,41 @@
+
+@import 'sass/Color'
+
+*, body
+  margin: 0
+  padding: 0
+  ::-webkit-scrollbar
+    display: none
+
+
+
+#app
+  font-family: 'Avenir', Helvetica, Arial, sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  text-align: center
+  color: $dark-text
+
+.topImage
+  width: 100vw
+  height: 20vh
+  background-image: url("https://newevolutiondesigns.com/images/freebies/retro-wallpaper-35.jpg")
+  background-attachment: fixed
+
+#nav
+  padding: 30px
+  background-color: $primary-background-color
+  position: sticky
+  top: 0
+  a
+    font-weight: bold
+    color: #2c3e50
+    margin: 1em
+    text-decoration: none
+    &.router-link-exact-active
+      color: $accsent-color
+      text-decoration: underline
+
+.faIcon
+  margin-right: 0.25em
+  font-size: 1.5em

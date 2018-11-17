@@ -1,29 +1,19 @@
 <template>
   <div id="app">
+    <div class="topImage"></div>
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/"><font-awesome-icon icon="home" class="faIcon" />Home</router-link>
+      <router-link to="/about"><font-awesome-icon icon="info" class="faIcon" />About</router-link>
+      <router-link to="/photos"><font-awesome-icon icon="camera-retro" class="faIcon" />Photos</router-link>
+      <router-link to="/web"><font-awesome-icon icon="window-maximize" class="faIcon" />Web</router-link>
+      <router-link to="/blog"><font-awesome-icon icon="coffee" class="faIcon" />Blog</router-link>
+      <router-link to="/help"><font-awesome-icon icon="question-circle" class="faIcon" />Help</router-link>
+      <router-link to="/contact"><font-awesome-icon icon="at" class="faIcon" />Contact</router-link>
     </div>
     <router-view/>
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
+<style lang="sass">
+  @import "./app.sass"
 </style>
