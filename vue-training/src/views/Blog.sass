@@ -1,11 +1,11 @@
 @import '../sass/Color'
 
-.helpContent
+.blogContent
   display: flex
   flex-wrap: wrap
   justify-content: space-evenly
   .md-content
-      width: calc(100% / 6)
+      width: calc(100% / 5)
       height: 25em
       display: inline-flex
       justify-content: center
@@ -15,7 +15,7 @@
   .large
     width: 100%
     background-color: pink
-    height: 75em
+    min-height: 75em
 
   .medium
     width: 50%
@@ -25,4 +25,14 @@
   .footer
     width: 100%
     background-color: $primary-background-color
+    height: 5vh
+
+  .header
+    width: 100%
+    background-color: $primary-color
+    height: 5vh
+
+  .divider
+    width: 100%
+    background-color: $white
     height: 5vh
