@@ -16,4 +16,5 @@
 
 <style lang="sass">
   @import "./app.sass"
+  @import "./sass/Nav.sass"
 </style>
