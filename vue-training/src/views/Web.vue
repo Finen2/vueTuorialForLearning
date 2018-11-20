@@ -1,16 +1,24 @@
 <template>
   <div class="webContent">
-    <Calculator />
+    <h1>Cool stuff</h1>
+    <div class="pagePart">
+      <Calculator />
+    </div>
+    <div class="pagePart">
+      <Crypto />
+    </div>
   </div>
 </template>
 
 <script lang="ts">
   import Calculator from '../components/Calculator.vue'
+  import Crypto from '../components/Crypto.vue'
 
   export default {
     name: 'app',
     components: {
-      Calculator
+      Calculator,
+      Crypto
     }
   }
 </script>
